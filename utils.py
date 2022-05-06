@@ -13,10 +13,8 @@ def is_this_circleci():
     """
     Return if we are currently running in CircleCI.
     """
-    return bool(os.environ.get("CIRCLECI"))
 
-
-def skipIfCircleCI(testfn, reason="Test disabled in CircleCI"):
+def skipIfCircleCI(testfn, reason="Test 
     """
     Decorate a test to skip if running on CircleCI.
     """
